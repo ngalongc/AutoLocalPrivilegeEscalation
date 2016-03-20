@@ -1,10 +1,16 @@
 # AutoLocalPrivilegeEscalation
 An automated script that download potential exploit for linux kernel from exploitdb, and compile them automatically
 
+This script is created due to Hackademics, there are so much possible exploit for that version of kernel, as a rookie OSCP student, I am not able to find out the correct exploit, also I am too lazy to test them one by one. So I hope this script can help me in the future.
+
 First, it search for linux pirvilege escalation from the exploitdb in local directory by searchsploit.
+
 Pass in the kernel version as first parameter, it lists potential exploit, and ask if you want to copy them from the local directory.
+
 After that, it asks if you want to compile the downloaded C file.
+
 Then, it will ask if you want to make a tar ball of the directory.
+
 And it will show the summary of the downloaded files.
 
 ```
