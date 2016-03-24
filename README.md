@@ -13,6 +13,9 @@ Then, it will ask if you want to make a tar ball of the directory.
 
 And it will show the summary of the downloaded files.
 
+[*] Script Environment: Kali 3.18.0 kali2
+[*] Test result in Kali 4.0 is negative for this script, need to redesign the architecture, maybe python is more suitable to do this automation, need to think again.
+
 ```
 root@workstation:~/utilities# ./auto_priv_exploit.sh 
 [*] Usage: ./auto_priv_exploit.sh VERSION_OF_KERNEL
