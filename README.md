@@ -15,6 +15,7 @@ And it will show the summary of the downloaded files.
 
 [*] Script Environment: Kali 3.18.0 kali2
 [*] Test result in Kali 4.0 is negative for this script, need to redesign the architecture, maybe python is more suitable to do this automation, need to think again.
+[*] 16 Mar 25 Updated with Python version of this idea, more adaptable to different kali environment and more easy to change the code in this way.
 
 ```
 root@workstation:~/utilities# ./auto_priv_exploit.sh 
