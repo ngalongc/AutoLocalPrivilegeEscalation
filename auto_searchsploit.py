@@ -4,6 +4,12 @@ import argparse
 import os
 import sys
 
+# Python 2 and 3 compability
+try:
+    input = raw_input
+except NameError:
+    pass
+
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('kernel_version',
                     metavar='kernel_version',
