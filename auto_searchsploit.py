@@ -4,7 +4,7 @@ import argparse
 import os
 import sys
 
-# Python 2 and 3 compability
+# Python 2 and 3 compatibility
 try:
     input = raw_input
 except NameError:
@@ -29,7 +29,6 @@ except subprocess.CalledProcessError as grepexc:
 
 base_dir = "/usr/share/exploitdb/platforms/linux/local"
 dir_location = "%s/linux_%s/" % (os.environ['PWD'], kern_ver)
-c_found = False
 
 print("[*]Potential Exploit :")
 
@@ -59,13 +58,7 @@ else:
     sys.exit(0)
 
 # Now try to compile them if it is C
-for _file in file_list:
-    file_extension = _file.split(b".")[1]
-    if file_extension == 'c' or file_extension == "C":
-        c_found = True
-        break
-
-if c_found:
+if 'c' in [file.split(b".")[1].lower() for file in file_list]:
     print("[*] C script found")
     print("[*] Compile format: gcc C_SCRIPT -o C_SCRIPT.exe")
     compile_ans = input(
@@ -100,4 +93,3 @@ if c_found:
 # if tar_answer.lower() == "y":
 #    TAR = 'tar -cvf %s.tar %s' % (dir_location, dir_location)
 #    subprocess.call(TAR, shell=True)
-
