@@ -13,9 +13,13 @@ Then, it will ask if you want to make a tar ball of the directory.
 
 And it will show the summary of the downloaded files.
 
-[*] Script Environment: Kali 3.18.0 kali2
-[*] Test result in Kali 4.0 is negative for this script, need to redesign the architecture, maybe python is more suitable to do this automation, need to think again.
-[*] 16 Mar 25 Updated with Python version of this idea, more adaptable to different kali environment and more easy to change the code in this way.
+Script Environment: Kali 3.18.0 kali2
+
+Test result in Kali 4.0 is negative for this script, need to redesign the architecture, maybe python is more suitable to do this automation, need to think again.
+
+16 Mar 25 Updated with Python version of this idea, more adaptable to different kali environment and more easy to change the code in this way.
+
+16 Apr 30 After almost finishes with all the boxes in OSCP, I have to admit I have not use this script at all during my lab times. There is one thing I learnt from the labs, do not run exploit blindly, as exploits might cause the system to crash, or leaves your footprint in a way you cannot imagine etc. Always enumerate more and gather all the information you have to escalate. DO NOT run the exploit blindly without knowing what the exploit does.
 
 ```
 root@workstation:~/utilities# ./auto_priv_exploit.sh 
